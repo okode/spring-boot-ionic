@@ -8,17 +8,23 @@ Requirements
 
 * Homebrew
 
-    $ brew update ; brew upgrade
+```
+$ brew update ; brew upgrade
+```
 
 * Java 8
 
-    $ brew cask install java
+```
+$ brew cask install java
+```
 
 * Ionic2
 
-    $ brew install node yarn
-    $ npm update -g
-    $ npm install -g ionic cordova ios-sim ios-deploy
+```
+$ brew install node yarn
+$ npm update -g
+$ npm install -g ionic cordova ios-sim ios-deploy
+```
 
 Building and Running
 --------------------
