@@ -1,8 +1,8 @@
-package com.okode.reactive.repository;
+package com.okode.backend.repository;
 
 import java.util.List;
 
-import com.okode.reactive.model.Person;
+import com.okode.backend.model.Person;
 
 public interface PersonRepository {
 

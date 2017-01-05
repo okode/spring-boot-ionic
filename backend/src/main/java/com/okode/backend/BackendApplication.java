@@ -1,4 +1,4 @@
-package com.okode.reactive;
+package com.okode.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.okode.reactive.repository;
+package com.okode.backend.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Component;
 
-import com.okode.reactive.model.Person;
+import com.okode.backend.model.Person;
 
 @Component
 public class PersonRepositoryImpl implements PersonRepository {

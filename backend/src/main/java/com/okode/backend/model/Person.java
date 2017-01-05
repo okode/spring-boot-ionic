@@ -1,4 +1,4 @@
-package com.okode.reactive.model;
+package com.okode.backend.model;
 
 public class Person {
 

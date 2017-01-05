@@ -1,4 +1,4 @@
-package com.okode.reactive.controller;
+package com.okode.backend.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.okode.reactive.model.Person;
-import com.okode.reactive.service.PersonService;
+import com.okode.backend.model.Person;
+import com.okode.backend.service.PersonService;
 
 @RestController
 @CrossOrigin

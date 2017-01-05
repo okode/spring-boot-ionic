@@ -1,4 +1,8 @@
 .DS_Store
+.classpath
+.project
+.settings/
+.gradle/
 backend/bin/
 backend/static/
 frontend/.vscode/

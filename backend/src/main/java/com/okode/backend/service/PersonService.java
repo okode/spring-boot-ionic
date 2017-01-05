@@ -1,12 +1,12 @@
-package com.okode.reactive.service;
+package com.okode.backend.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.okode.reactive.model.Person;
-import com.okode.reactive.repository.PersonRepository;
+import com.okode.backend.model.Person;
+import com.okode.backend.repository.PersonRepository;
 
 @Service
 public class PersonService {
