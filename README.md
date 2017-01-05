@@ -1,6 +1,8 @@
 Spring Boot Ionic
 =================
 
+[![Build Status](https://travis-ci.org/okode/spring-boot-ionic.svg?branch=develop)](https://travis-ci.org/okode/spring-boot-ionic)
+
 Spring Boot backend with Ionic2 frontend.
 
 Requirements
