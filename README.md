@@ -53,4 +53,4 @@ $ cd backend/build/libs
 $ ./backend-{VERSION}.jar
 ```
 
-Open the frontend URL: http://localhost:8080
+Open `http://localhost:8080` in your favorite browser.
