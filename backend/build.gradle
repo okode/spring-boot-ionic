@@ -15,15 +15,21 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 jar {
-	baseName = 'backend'
-	version = '0.0.1'
+    baseName = 'backend'
+    version = '0.0.1'
 }
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+bootRepackage {
+    mainClass = 'com.okode.backend.BackendApplication'
+    executable = true
+    excludeDevtools = true
+}
+
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
