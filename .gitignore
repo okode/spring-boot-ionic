@@ -4,6 +4,7 @@
 .settings/
 .gradle/
 backend/bin/
+backend/build/
 backend/static/
 frontend/.vscode/
 frontend/node_modules/
