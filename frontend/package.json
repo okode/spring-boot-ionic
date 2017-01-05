@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "description": "Frontend App",
   "author": "Okode",
   "homepage": "https://www.okode.com/",
   "private": true,
@@ -30,21 +31,8 @@
     "@ionic/app-scripts": "0.0.48",
     "typescript": "2.0.9"
   },
-  "cordovaPlugins": [
-    "cordova-plugin-whitelist",
-    "cordova-plugin-statusbar",
-    "cordova-plugin-console",
-    "cordova-plugin-device",
-    "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
-  ],
+  "cordovaPlugins": [ ],
   "cordovaPlatforms": [
-    "ios",
-    {
-      "platform": "ios",
-      "version": "",
-      "locator": "ios"
-    }
-  ],
-  "description": "Frontend App"
+    "browser"
+  ]
 }
