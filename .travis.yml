@@ -1,0 +1,21 @@
+branches:
+  only:
+  - master
+  - develop
+language: java
+jdk:
+- oraclejdk8
+addons:
+  apt:
+    sources:
+    - sourceline: deb https://dl.yarnpkg.com/debian/ stable main
+      key_url: https://dl.yarnpkg.com/debian/pubkey.gpg
+    packages:
+    - yarn
+before_install:
+- export LANG=en_US.UTF-8
+- nvm install 7
+- npm install -g ionic cordova
+script:
+- cd frontend && yarn install && ionic platform add browser && ionic build browser --prod --release && cd ..
+- cd backend && cp -Rv ../frontend/www/* src/main/resources/static && ./gradlew bootRepackage && cd ..
