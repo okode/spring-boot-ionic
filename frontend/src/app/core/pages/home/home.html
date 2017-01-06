@@ -8,8 +8,6 @@
   <h2>Home</h2>
   <button ion-button (click)="refreshPeople();">Refresh People</button>
   <ion-list>
-  <ion-item *ngFor="let person of people">
-    {{person.name}}, {{person.age}}
-  </ion-item>
-</ion-list>
+    <ion-item *ngFor="let person of people">{{person.name}}, {{person.age}}</ion-item>
+  </ion-list>
 </ion-content>
