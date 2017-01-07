@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { Person } from '../../models/person';
 import { PeopleService } from '../../services/people';
 
@@ -11,7 +10,7 @@ export class HomePage {
 
   people: Person[];
 
-  constructor(public navCtrl: NavController, public peopleService: PeopleService) { }
+  constructor(private peopleService: PeopleService) { }
 
   refreshPeople() {
     this.peopleService.findAll().subscribe(people => {
