@@ -52,7 +52,14 @@ $ ./gradlew bootRepackage
 
 ```
 $ cd backend/build/libs
-$ ./backend-{VERSION}.jar
+$ ./backend-{VERSION}.war
 ```
 
 Open `http://localhost:8080` in your favorite browser.
+
+For using different port run war as following:
+
+```
+$ ./backend-{VERSION}.war --server.port=[SERVER_PORT]
+```
+

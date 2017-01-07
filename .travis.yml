@@ -25,7 +25,7 @@ deploy:
   api_key:
     secure: TIw7HfhFjL3I+cTuP5sVqWh4QNHZOOKAna9O2zmPZnpy+z+GHYHyVvrpsIce7f/A+7LT72geFrICLJCs4QISZfd3u1XLVRr2wz2SAHYqqkufx6A0ShDytrHhwZs3e+d8CSFamMuNbIGmacxpLTy20txwEGHoTrmiA7tzagFRPUAXtKwirF2JwDmD8dNZ+cWbahF4hArwfN67xDnuRXNiQV5o4yslVOEzygOvfrD38ZbGjPZRWuWC1/kCkSBUC26j4MG0WpTqp3t2DVb5RAuNCEFpr/ejRwmmTHDaKQtnZByFzJq2OiF/F06TCfZC0FGR3QpxLb0WL4W5b5iDqiYUIhmXjElaegUc8BnM7whd1bGUYEVBacGf7d8+/2CLY7ix3Rdrz/nFMUryuWup1qmKgliMlUEnRKNgIYBL3X9COzz7J5FLyx3iFlmUgxKrtNS83OxfEdpoPkH6uqd8szz3kimyEyix/5PhTvYJwzzkNPQeITz80Oev/7oPJGgLsIqEl+nIgIkaakkwDxy40CynXv/HFiT/LGMYJuTe+S2hJ/DT1r4aP457kljLL3b9Iw8y53MGDoSB5rzhc6/uzHHMWMi6GHDUf4IPlrlbbKbIFU5UEswOXem3j88FQlcq0Pqrmd9qRsMf1wEhYD590kl2gEqbxR++h0oK+Q+3EUFBmkw=
   file_glob: true
-  file: backend/build/libs/*.jar
+  file: backend/build/libs/*.war
   skip_cleanup: true
   overwrite: true
   on:
