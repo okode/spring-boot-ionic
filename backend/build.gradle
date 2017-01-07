@@ -17,7 +17,7 @@ apply plugin: 'war'
 
 war {
     baseName = 'backend'
-    version = '0.0.5'
+    version = '0.0.6'
 }
 
 sourceCompatibility = 1.8
