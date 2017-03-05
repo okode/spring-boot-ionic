@@ -2,7 +2,6 @@ Spring Boot Ionic
 =================
 
 [![Build Status](https://travis-ci.org/okode/spring-boot-ionic.svg?branch=develop)](https://travis-ci.org/okode/spring-boot-ionic)
-[![Coverity Status](https://scan.coverity.com/projects/11960/badge.svg)](https://scan.coverity.com/projects/okode-spring-boot-ionic)
 
 Spring Boot backend with Ionic2 frontend.
 
