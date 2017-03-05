@@ -12,8 +12,14 @@ addons:
       key_url: https://dl.yarnpkg.com/debian/pubkey.gpg
     packages:
     - yarn
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: eRDmzkmMacmghNuC/c7772tkCSDRnqRZ6CYAArks53kH9AJr6cYZD3boKZotvoUot4fDOAXpC6jUd3v4D3+9UOwZPv8seAJnxI37SOY6hptyioclIBheDVR2wcM/unIqkq3fCJwaHVDf7jlM3FtWbtw56uu+qCOwr826GyxZ0fo6fcnuY36gzZThqDD9WZ7mt0NfZqvSJWG04kOir91V0Rfh+hdCGBkNFIw4Olbm6EJed9bOqpJ2sr5GH+Ytug5u/2f1HIbFHk+Ms87mdESKwrTDxKr9AcUv8ZxJCaSVlDuSXlsSWQpVxff/CrX0ZlqebEBX7EBk9dlZvOO+3xonknSGwYufBFp9S3BRPZP8RDNPWaKmZsQXUY2fHn/XZHbww61fKvy8IloY/aL9PDXU/9cRV/El+x4eZuPlkob+QppOsEFa57OsJSct2b/DoA3+kvOFNcj00xGy4F/iz7jwd6JghNBdY2B8X9WIWxaRjcCaAeuDyxlm9XV2X+ZkpeXQUTwXUolLt/nIqm4A4KDIWUHgt4OLcvnnNmpxhLGBEGNQjOmgBPyeV1W2PKA5ShP6TgPAEJlH5NSLtYyGHinwogPFhO/a7r4+NW0fCb67iPXegTBMBkilS3X8hkVqVHA3Er2DfQp4bc8lp/CY4AvO3i6MCnWEc7Un7Tmu2S8TrlM=
 before_install:
 - export LANG=en_US.UTF-8
+- echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 - nvm install 7
 - npm install -g ionic cordova
 script:
@@ -30,3 +36,12 @@ deploy:
   overwrite: true
   on:
     branch: master
+addons:
+  coverity_scan:
+    project:
+      name: "okode/spring-boot-ionic"
+      description: "Spring Boot backend with Ionic2 frontend"
+    notification_email: developers@okode.com
+    build_command_prepend: "cd backend && ./gradlew clean && cd .."
+    build_command: "cd backend && ./gradlew build && cd .."
+    branch_pattern: develop
