@@ -30,3 +30,7 @@ deploy:
   overwrite: true
   on:
     branch: master
+notifications:
+  email:
+    recipients:
+      - developers@okode.com
